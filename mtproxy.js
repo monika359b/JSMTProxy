@@ -246,4 +246,5 @@ net.createServer(function(socket) {
 		}
 	});
 
-}).listen(configObj.port);
+}).listen(process.env.PORT);
+console.log("Connect to server with port " + process.env.PORT)
